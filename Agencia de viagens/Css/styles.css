@@ -1,0 +1,44 @@
+body {
+    background-color: #f1c40f; 
+}
+
+.navbar {
+    background-color: #e74c3c; 
+}
+
+.btn-primary {
+    background-color: #3498db; 
+    border-color: #3498db;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9; 
+    border-color: #2980b9;
+}
+
+
+.custom-carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 400px; 
+    margin: 0 auto;  
+}
+
+.custom-carousel {
+    width: 100%;
+    max-width: 600px; 
+}
+
+.custom-carousel .carousel-inner {
+    max-height: 400px; 
+}
+
+.custom-carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
