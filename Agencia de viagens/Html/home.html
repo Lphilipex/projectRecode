@@ -7,15 +7,15 @@
     <title>Descubra o Mundo - Agência de Viagens</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/ProjectRecode/Agencia de viagens/Css/styles.css">
+    <link rel="stylesheet" href="/Agencia de viagens/Css/styles.css">
 </head>
 
 <body>
 
-    <!-- Barra de Navegação -->
+    
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Descubra o Mundo</a>
+            <a class="navbar-brand" href="./home.html">Descubra o Mundo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -32,33 +32,38 @@
                         <a class="nav-link" href="./Promoções.html">Promoções</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Contatos</a>
+                        <a class="nav-link" href="./contatos.html">Contatos</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Centraliza o carrossel -->
+    <div class="container mt-5">
+        <h1 class="text-center text-white">Bem-vindo à Descubra o Mundo</h1>
+        <p class="text-center text-white">Sua agência de viagens para aventuras incríveis.</p>
+        <p class="text-center text-white">Descubra novos horizontes</p>
+    </div>
+    
     <div class="custom-carousel-container mt-5">
         <div id="customCarousel" class="carousel slide custom-carousel" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="/ProjectRecode/Agencia de viagens/imagens/gramado (1).jpg" class="d-block w-100" alt="Slide 1">
+                    <img src="/Agencia de viagens/imagens/campos do jordão.jpg" class="d-block w-100" alt="Slide 1">
                     <div class="carousel-caption d-none d-md-block">
                         <h2>Descubra o Mundo</h2>
                         <p>Sua aventura começa aqui.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="/ProjectRecode/Agencia de viagens/imagens/foz.jpg" class="d-block w-100" alt="Slide 2">
+                    <img src="/Agencia de viagens/imagens/gramado (1).jpg" class="d-block w-100" alt="Slide 2">
                     <div class="carousel-caption d-none d-md-block">
                         <h2>Explore Novos Horizontes</h2>
                         <p>Descubra lugares incríveis ao redor do mundo.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="/ProjectRecode/Agencia de viagens/imagens/Piscinasnaturais.jpg" class="d-block w-100" alt="Slide 2">
+                    <img src="/Agencia de viagens/imagens/foz.jpg" class="d-block w-100" alt="Slide 2">
                     <div class="carousel-caption d-none d-md-block">
                         <h2>Explore Novos Horizontes</h2>
                         <p>Descubra lugares incríveis ao redor do mundo.</p>
@@ -76,16 +81,12 @@
             </a>
         </div>
     </div>
-
-    <div class="container mt-5">
-        <h1 class="text-center text-white">Bem-vindo à Descubra o Mundo</h1>
-        <p class="text-center text-white">Sua agência de viagens para aventuras incríveis.</p>
-        <div class="text-center">
-            <a href="#" class="btn btn-primary btn-lg">Ver Destinos</a>
-        </div>
+    
+    <div class="text-center mt-5">
+        <a href="#" class="btn btn-primary btn-lg">Ver Destinos</a>
     </div>
 
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="bg-dark text-white text-center py-3 mt-3">
         &copy; 2023 Descubra o Mundo. Todos os direitos reservados.
     </footer>
 
