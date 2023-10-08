@@ -1,0 +1,47 @@
+				CODIGO DO BANCO DE DADOS
+ 
+CREATE TABLE Cliente 
+( 
+ idCliente INT PRIMARY KEY,  
+ nome VARCHAR(255),  
+ dataNascimento DATE,  
+ telefone VARCHAR(20),  
+ preferenciaDeViagem VARCHAR(255),  
+ observacoes TEXT
+); 
+
+
+CREATE TABLE Destino 
+( 
+ idDestino INT PRIMARY KEY,  
+ nomeDoDestino VARCHAR(255), 
+ descricao TEXT 
+); 
+
+
+CREATE TABLE Pacote 
+( 
+ idPacote INT PRIMARY KEY,  
+ dataDePartida DATE, 
+ dataDeRetorno DATE, 
+ precoTotal DECIMAL(10, 2)  
+); 
+
+
+CREATE TABLE DestinoDoPacote 
+( 
+ idDestino INT,  
+ idPacote INT,
+ PRIMARY KEY (idDestino, idPacote),  
+ FOREIGN KEY (idDestino) REFERENCES Destino (idDestino),
+ FOREIGN KEY (idPacote) REFERENCES Pacote (idPacote)
+); 
+
+CREATE TABLE Reservas 
+( 
+ idCliente INT,  
+ idPacote INT,
+ PRIMARY KEY (idCliente, idPacote),  
+ FOREIGN KEY (idCliente) REFERENCES Cliente (idCliente),
+ FOREIGN KEY (idPacote) REFERENCES Pacote (idPacote)
+); 
